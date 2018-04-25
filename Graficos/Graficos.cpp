@@ -104,7 +104,7 @@ void actualizar() {
 
 void dibujar() {
 
-	cuadrado->dibujar(GL_POLYGON);
+	cuadrado->dibujar(GL_TRIANGLES);
 	//figura2->dibujar(GL_POLYGON);
 }
 
@@ -171,12 +171,21 @@ void inicializarCuadrado() {
 	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
 	cuadrado->vertices.push_back({ vec4(-8.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
 	cuadrado->vertices.push_back({ vec4(-8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+
 	//Finaliza lado izquierdo del vidrio del piloto
 
 	//Inicia lado derecho del vidrio del piloto
 	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
 	cuadrado->vertices.push_back({ vec4(8.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
 	cuadrado->vertices.push_back({ vec4(8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
 	//Finaliza lado derecho del vidrio del piloto
 
 	//Inicia parte de atras del vidrio
@@ -191,26 +200,51 @@ void inicializarCuadrado() {
 	//Finaliza parte de atras del vidrio
 
 	//Inicia ala derecha del airwing
-	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f / 255.0f, 86.0f / 255.0f, 172.0f / 255.0f)) });
-	cuadrado->vertices.push_back({ vec4(25.0f, 27.0f, 50.0f, 1.0f),vec4((0.0f / 255.0f, 86.0f / 255.0f, 172.0f / 255.0f)) });
-	cuadrado->vertices.push_back({ vec4(21.0f, -5.0f, 40.0f, 1.0f),vec4((0.0f / 255.0f, 86.0f / 255.0f, 172.0f / 255.0f)) });
+	//principal
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(25.0f, 27.0f, 50.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(21.0f, -5.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	//abajo
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(21.0f, -5.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(22.0f, -7.0f, 35.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(25.0f, -27.0f, 50.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(21.0f, 5.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+
+	//ala alargada
+
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(50.0f, 3.0f, 50.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(17.0f, 4.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+
 	
 
 	//Finaliza ala derecha del airwing
 
 	//Inicia ala izquierda del airwing
 
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-25.0f, 27.0f, 50.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-21.0f, -5.0f, 40.0f, 1.0f), vec4((0.0f, 1.0f, 0.0f))});
+	//abajo
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-21.0f, -5.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-22.0f, -7.0f, 35.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-25.0f, -27.0f, 50.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-21.0f, 5.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+
+	//ala alargada
+
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-50.0f, 3.0f, 50.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+	cuadrado->vertices.push_back({ vec4(-17.0f, 4.0f, 40.0f, 1.0f),vec4((0.0f, 1.0f, 0.0f)) });
+
 	
 
-	//Finaliza ala izquierda del airwing
-
-	//Inicia lado derecho del vidrio del piloto
-	
-    //Finaliza lado derechi del vidrio del piloto
-
-	//Inicia lado izquierdo del vidrio del piloto
-	
-	//Finaliza lado izquierdo del vidrio del piloto
 	
 
 	cuadrado->vista = vista;
@@ -228,7 +262,7 @@ void inicializarvista() {
 void inicializarproyeccion() {
 	proyeccion = perspective (90.0f,//Campo de vision (FoV)
 		ancho / alto, //Relacion de aspecto (Aspect ratio)
-		0.1f,// Near clipping (desde donde renderea)
+		1.0f,// Near clipping (desde donde renderea)
 		200.0f); //Far clipping (Hasta donde renderea)
 }
 
