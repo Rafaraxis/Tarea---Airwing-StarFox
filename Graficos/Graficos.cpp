@@ -122,58 +122,95 @@ void inicializarCuadrado() {
 	srand(time(NULL));
 
 	// Inicia cono del frente del airwing
-	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.2f, 1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-0.2f, 1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.2f, 1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.0f, -1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.0f, -1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-
-	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-0.2f, 1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
+	//1
+	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//2
+	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//3
+	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, -9.0f, 35.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//4
+	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, -9.0f, 35.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//5
+	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//6
+	cuadrado->vertices.push_back({ vec4(0.0f, 0.0f, 1.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
 	// Finaliza cono del frente del airwing
 
-	//Inicia ala derecha del airwing
+	//Inicia vidrio del piloto
+	//1
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 30.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 8.0f, 30.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 20.0f, 40.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	//2
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 30.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 20.0f, 40.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 20.0f, 40.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	//3
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 30.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 20.0f, 40.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 20.0f, 40.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	//4
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 30.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 20.0f, 40.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 8.0f, 30.0f, 1.0f),vec4((128.0f / 255.0, 128.0f / 255.0, 142.0f / 255.0)) });
+	//Finaliza vidrio del piloto
 
-	cuadrado->vertices.push_back({ vec4(0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(2.0f, 2.0f, -16.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(2.5f, -1.0f, -5.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
+	//Inicia lado izquierdo del vidrio del piloto
+	cuadrado->vertices.push_back({ vec4(-19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//Finaliza lado izquierdo del vidrio del piloto
+
+	//Inicia lado derecho del vidrio del piloto
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 8.0f, 30.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//Finaliza lado derecho del vidrio del piloto
+
+	//Inicia parte de atras del vidrio
+	//2
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 50.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(-8.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//3
+	cuadrado->vertices.push_back({ vec4(0.0f, 8.0f, 50.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(0.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	cuadrado->vertices.push_back({ vec4(8.0f, 20.0f, 40.0f, 1.0f),vec4((244.0f / 255.0, 244.0f / 255.0, 244.0f / 255.0)) });
+	//Finaliza parte de atras del vidrio
+
+	//Inicia ala derecha del airwing
+	cuadrado->vertices.push_back({ vec4(19.0f, -2.0f, 40.0f, 1.0f),vec4((0.0f / 255.0f, 86.0f / 255.0f, 172.0f / 255.0f)) });
+	cuadrado->vertices.push_back({ vec4(25.0f, 27.0f, 50.0f, 1.0f),vec4((0.0f / 255.0f, 86.0f / 255.0f, 172.0f / 255.0f)) });
+	cuadrado->vertices.push_back({ vec4(21.0f, -5.0f, 40.0f, 1.0f),vec4((0.0f / 255.0f, 86.0f / 255.0f, 172.0f / 255.0f)) });
+	
 
 	//Finaliza ala derecha del airwing
 
 	//Inicia ala izquierda del airwing
 
-	cuadrado->vertices.push_back({ vec4(-0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-2.0f, 2.0f, -16.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-2.5f, -1.0f, -5.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
+	
 
 	//Finaliza ala izquierda del airwing
 
 	//Inicia lado derecho del vidrio del piloto
-	cuadrado->vertices.push_back({ vec4(0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.2f, 1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(0.2f, 1.5f, -15.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
+	
     //Finaliza lado derechi del vidrio del piloto
 
 	//Inicia lado izquierdo del vidrio del piloto
-	cuadrado->vertices.push_back({ vec4(-0.9f, -0.9f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-0.2f, 1.0f, -10.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
-	cuadrado->vertices.push_back({ vec4(-0.2f, 1.5f, -15.0f, 1.0f),vec4((float(rand() % 101)) / 100,(float(rand() % 101)) / 100,(float(rand() % 101)) / 100,1.0f) });
+	
 	//Finaliza lado izquierdo del vidrio del piloto
-
-
-
-
 	
 
 	cuadrado->vista = vista;
@@ -189,10 +226,10 @@ void inicializarvista() {
 }
 
 void inicializarproyeccion() {
-	proyeccion = perspective (45.0f,//Campo de vision (FoV)
+	proyeccion = perspective (90.0f,//Campo de vision (FoV)
 		ancho / alto, //Relacion de aspecto (Aspect ratio)
 		0.1f,// Near clipping (desde donde renderea)
-		100.0f); //Far clipping (Hasta donde renderea)
+		200.0f); //Far clipping (Hasta donde renderea)
 }
 
 int main()
@@ -233,7 +270,7 @@ int main()
 
 	red = green = blue = 0.5f;
 
-	posicionCamara = vec3(3.0f, 5.0f, 9.0f);
+	posicionCamara = vec3(0.0f, 0.0f, -2.0f);
 
 	inicializarvista();
 	inicializarproyeccion();
